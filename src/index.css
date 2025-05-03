@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 25% 12%;
+    --foreground: 210 40% 98%;
+
+    --card: 220 25% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 220 25% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 222 89% 65%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 250 70% 65%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 220 15% 25%;
+    --muted-foreground: 210 20% 80%;
+
+    --accent: 250 70% 65%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 222 89% 65%;
+
+    --radius: 0.75rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  .section {
+    @apply py-16 md:py-24;
+  }
+  .container-custom {
+    @apply container px-4 md:px-6 mx-auto;
+  }
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  /* New gradient backgrounds */
+  .bg-gradient-purple {
+    @apply bg-gradient-to-br from-purple-700 via-indigo-700 to-blue-700;
+  }
+  .bg-gradient-dark {
+    @apply bg-gradient-to-br from-slate-900 via-slate-800 to-slate-700;
+  }
+  .bg-gradient-blue {
+    @apply bg-gradient-to-r from-blue-700 to-blue-500;
+  }
+  .bg-gradient-green {
+    @apply bg-gradient-to-r from-emerald-700 to-emerald-500;
+  }
+  .bg-gradient-orange {
+    @apply bg-gradient-to-r from-orange-700 to-orange-500;
+  }
+  
+  /* Glass effects */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-md;
+  }
+  .glass-dark {
+    @apply bg-black/30 backdrop-blur-md border border-white/10 shadow-md;
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
