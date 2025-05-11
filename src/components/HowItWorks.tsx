@@ -27,19 +27,34 @@ const Step = ({ number, title, description }: StepProps) => {
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="section relative overflow-hidden">
+    <section
+      id="how-it-works"
+      className="section relative overflow-hidden"
+      data-aos="fade-up"
+    >
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2
+            className="text-3xl md:text-4xl font-bold mb-4 text-white"
+            data-aos="fade-up"
+          >
             How It Works
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p
+            className="text-lg text-muted-foreground max-w-2xl mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             Creating your portfolio is simple with our intuitive three-step
             process designed to get you online quickly and professionally.
           </p>
         </div>
 
-        <div className="steps-container flex flex-col md:flex-row justify-center items-center gap-16 relative z-10 py-10">
+        <div
+          className="steps-container flex flex-col md:flex-row justify-center items-center gap-16 relative z-10 py-10"
+          data-aos="fade-up"
+          data-aos-delay="400"
+        >
           <Step
             number="src/assets/number-1.png"
             title="Enter Your Info"
