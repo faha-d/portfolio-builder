@@ -5,7 +5,7 @@ import { ChevronRight } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="section mt-16 md:mt-24 relative overflow-hidden from-white to-blue-50">
+    <div className="section mt-16 md:mt-24 relative overflow-hidden ">
       <div className="container-custom">
         <div className="flex flex-col lg:flex-row items-center gap-8 md:gap-12">
           <div className="flex-1 text-center lg:text-left">
