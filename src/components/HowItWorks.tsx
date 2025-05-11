@@ -53,7 +53,7 @@ const HowItWorks = () => {
         <div
           className="steps-container flex flex-col md:flex-row justify-center items-center gap-16 relative z-10 py-10"
           data-aos="fade-up"
-          data-aos-delay="400"
+          data-aos-delay="300"
         >
           <Step
             number="src/assets/number-1.png"

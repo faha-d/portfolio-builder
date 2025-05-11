@@ -29,7 +29,7 @@ const GetStartedCTA = () => {
           asChild
           className="font-semibold px-8 py-6 text-base bg-white text-black hover:bg-transparent border-2 border-white hover:text-white transition duration-300"
           data-aos="zoom-in"
-          data-aos-delay="400"
+          data-aos-delay="300"
         >
           <Link to="/builder" className="flex items-center gap-2">
             Create Portfolio Now <ChevronRight size={18} />

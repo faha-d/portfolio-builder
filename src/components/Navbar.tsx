@@ -20,7 +20,11 @@ const NavLink = ({ to, label }: { to: string; label: string }) => {
 
 const Navbar = () => {
   return (
-    <nav className="sticky top-1.5 z-50 py-4 backdrop-blur-lg border-b border-neutral-700/80">
+    <nav
+      className="sticky top-1.5 z-50 py-4 backdrop-blur-lg border-b border-neutral-700/80"
+      data-aos="fade-down"
+      data-aos-duration="1000"
+    >
       <div className="container px-4 mx-auto relatiive text-sm">
         {/* Logo */}
         <div className="flex justify-between items-center">
@@ -44,7 +48,6 @@ const Navbar = () => {
           >
             Let's Build
           </Link>
-          
         </div>
       </div>
     </nav>
